@@ -285,7 +285,21 @@ p + p {
 }
 
 @media (max-width: 500px) {
-    .techs {
-        grid-template-columns: 1fr;
+    .lnk .h-stack {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .lnk .h-stack li {
+        width: 100%;
+        margin: 0;
+        border-bottom: 1px solid #1A202C;
+    }
+    
+    .lnk .h-stack li + li {
+        margin-top: .825rem;
     }
 }
