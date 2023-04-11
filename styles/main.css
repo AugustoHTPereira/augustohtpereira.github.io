@@ -1,0 +1,285 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+html {
+    font-family: Inter, Arial, sans-serif;
+    letter-spacing: -0.084rem;
+}
+
+body {
+    background: rgb(0,0,0);
+    background: linear-gradient(12deg, rgba(0,0,0,1) 0%, rgba(23,25,35,1) 100%);
+    color: #fff;
+    min-height: 100vh;
+}
+
+.container {
+    padding: 0 3rem;
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    max-width: 108rem;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.align-end {
+    align-items: end;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.pt-4 {
+    padding-top: 4rem;
+}
+
+.mb-4 {
+    margin-bottom: 4rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.h-stack {
+    display: flex;
+    list-style: none;
+}
+
+.h-stack li + li {
+    margin-left: 1.825rem;
+}
+
+.v-stack {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.v-stack li + li {
+    margin-top: 0.325rem;
+}
+
+.v-stack.spacing-2 > li:first-child {
+    padding-bottom: 1rem;
+}
+
+.v-stack.spacing-2 > li + li {
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.v-stack.spacing-4 > li:first-child {
+    padding-bottom: 2rem;
+}
+
+.v-stack.spacing-4 > li + li {
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.v-stack.spacing-8 > li:first-child {
+    padding-bottom: 4rem;
+}
+
+.v-stack.spacing-8 > li + li {
+    margin-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.v-stack.stroked > li + li {
+    border-top: 2px solid #1A202C;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1.125rem;
+}
+
+.stack-title {
+    color: #718096;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 1.125rem;
+}
+
+p + p {
+    margin-top: 1.125rem;
+}
+
+.card {
+    background-color: #0e0f14;
+    border: 1px solid #1A202C;
+    border-radius: 0.625rem;
+}
+
+.card-header {
+    padding: 3.125rem 3.125rem 0;
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.card-header:not(+ .card-body):not(+ .card-footer) {
+    padding-bottom: 3.125rem;
+}
+
+.card-body {
+    padding: 3.125rem;
+    font-size: 1.8rem;
+    color: #718096;
+}
+
+.card-body:not(+ .card-footer) {
+    padding-bottom: 3.125rem;
+}
+
+.card-footer {
+    padding: 0 3.125rem 3.125rem;
+}
+
+.card-min .card-body {
+    padding: 2rem 2.125rem;
+    font-size: 1.8rem;
+}
+
+.page-layout {
+    display: grid;
+    grid-template-columns: 32rem 1fr;
+    padding-bottom: 18rem;
+}
+
+.profile-photo {
+    background: url(../img/me.jpeg) no-repeat;
+    background-size: cover;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 10rem;
+    box-shadow: 0 2px 12px -1px rgba(0, 0, 0, 0.25);
+    border: 3px solid #fff;
+}
+
+.profile-name {
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 1.125rem;
+}
+
+.profile-contact-info a {
+    color: #4A5568;
+    transition: color 0.225s;
+    text-decoration: none;
+}
+
+.profile-contact-info a:hover {
+    color: #718096;
+    text-decoration: underline;
+}
+
+.profile-contact-info, .profile-techs, .profile-location {
+    font-size: 1.8rem;
+}
+
+.greetings-content {
+    font-size: 1.8rem;
+}
+
+.greetings-content h1 {
+    margin-bottom: 2rem;
+}
+
+.greetings-content p {
+    color: #A0AEC0;
+}
+
+.sticky-content {
+    position: sticky;
+    top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.lnk {
+    font-size: 1.6rem;
+    border-bottom: 1px solid #1A202C;
+}
+
+.lnk li {
+    padding-bottom: 0.625em;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.lnk li a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    padding: 0.625rem 1.125rem;
+    border-radius: 0.325rem;
+}
+
+.lnk li:hover {
+    border-color: aquamarine;
+}
+
+.lnk li:hover a {
+    background-color: #1A202C;
+}
+
+.lnk .coffe {
+    padding-top: 0.625rem;
+    font-weight: 600;
+    color: #4A5568;
+    text-decoration: none;
+    display: flex;
+}
+
+.techs h4 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #A0AEC0;
+}
+
+.page-content {
+    width: 100%;
+}
+
+@media (max-width: 960px) {
+    .page-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .lnk {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 1.125rem;
+    }
+
+    .techs {
+        grid-template-columns: 1fr 1fr;
+    }
+}
